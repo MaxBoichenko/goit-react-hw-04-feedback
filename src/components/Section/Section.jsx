@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Section = props => {
   return (
     <div>
@@ -5,4 +7,10 @@ export const Section = props => {
       {props.children}
     </div>
   );
+};
+
+Section.propTypes = {
+  props: PropTypes.shape({
+    title: PropTypes.string,
+  }),
 };
